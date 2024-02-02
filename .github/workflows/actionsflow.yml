@@ -1,4 +1,5 @@
 name: Actionsflow
+permissions: write-all
 on:
   schedule:
     - cron: "*/15 * * * *"
