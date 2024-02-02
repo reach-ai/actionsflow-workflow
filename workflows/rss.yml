@@ -1,7 +1,7 @@
 on:
   rss:
-    url: https://hnrss.org/newest?points=300&count=3
-    url: http://rss.cnn.com/rss/cnn_topstories.rss
+    - url: https://hnrss.org/newest?points=300&count=3
+    - url: http://rss.cnn.com/rss/cnn_topstories.rss
 jobs:
   print:
     name: Print
