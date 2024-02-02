@@ -1,6 +1,10 @@
 on:
   rss:
-    url: https://hnrss.org/newest?points=300&count=3
+    url: 
+      - https://hnrss.org/newest?points=300&count=3
+      - http://rss.cnn.com/rss/cnn_topstories.rss
+    config:
+      limit: 15
 jobs:
   print:
     name: Print
