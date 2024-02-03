@@ -5,6 +5,8 @@ on:
       - http://rss.cnn.com/rss/cnn_topstories.rss
     config:
       limit: 15
+      every: */5 * * * * # every 10 mins
+      debug: true
 jobs:
   print:
     name: Print
@@ -19,3 +21,8 @@ jobs:
           echo title: $title
           echo contentSnippet: $contentSnippet
           echo link: $link
+      # - name: Send POST Request
+      #   run: |
+      #     curl -X POST https://example.com/api/data \ 
+      #     -H "Content-Type: application/json" \ 
+      #     -d '{"param1":"value1", "param2":"value2"}'
