@@ -3,10 +3,11 @@ on:
     url: 
       - https://hnrss.org/newest?points=300&count=3
       - http://rss.cnn.com/rss/cnn_topstories.rss
+      - http://rss.cnn.com/rss/cnn_latest.rss
     config:
       limit: 15
       # every: */5 * * * * # every 10 mins
-      debug: true
+      # debug: true
 jobs:
   print:
     name: Print
