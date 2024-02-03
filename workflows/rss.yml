@@ -22,8 +22,8 @@ jobs:
           echo title: $title
           echo contentSnippet: $contentSnippet
           echo link: $link
-      # - name: Send POST Request
-      #   run: |
-      #     curl -X POST https://example.com/api/data \ 
-      #     -H "Content-Type: application/json" \ 
-      #     -d '{"param1":"value1", "param2":"value2"}'
+      - name: Send POST Request
+        run: |
+          curl -X POST https://example.com/api/data \ 
+          -H "Content-Type: application/json" \ 
+          -d '{"param1":"value1", "param2":"value2"}'
