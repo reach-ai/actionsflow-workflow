@@ -5,7 +5,7 @@ on:
       - http://rss.cnn.com/rss/cnn_topstories.rss
       - http://rss.cnn.com/rss/cnn_latest.rss
     config:
-      limit: 15
+      limit: 10
       every: "*/5 * * * *" # every 5 mins
       # debug: true
 jobs:
@@ -27,7 +27,4 @@ jobs:
           curl --location 'https://dream-s47zheng.k8s.csclub.cloud/discord' \
           --header 'Content-Type: application/json' \
           --header 'Authorization: Bearer ${{ secrets.DREAM_API_KEY }}' \
-          --data '{
-              "text": $title,
-              "link": $link
-          }'
+          --data '{"text": "'"$title"'", "link": "'"$link"'"}'
