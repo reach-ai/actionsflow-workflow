@@ -27,4 +27,4 @@ jobs:
           curl --location 'https://dream-s47zheng.k8s.csclub.cloud/discord' \
           --header 'Content-Type: application/json' \
           --header 'Authorization: Bearer ${{ secrets.DREAM_API_KEY }}' \
-          --data "{"text": $title, "link": $link}"
+          --data "{\"text\": \"$title\", \"link\": \"$link\"}"
