@@ -26,17 +26,17 @@ jobs:
           echo title: $title
           echo contentSnippet: $contentSnippet
           echo link: $link
+      - name: Install jq
+        run: sudo apt-get install jq
       - name: Send POST Request
         env:
           title: ${{on.rss.outputs.title}}
           contentSnippet: ${{on.rss.outputs.contentSnippet}}
           link: ${{on.rss.outputs.link}}
         run: |
+          JSON_PAYLOAD=$(jq -n --arg title "$title" --arg link "$link" '{"text": $title, "link": $link}')
           curl --location 'https://dream-s47zheng.k8s.csclub.cloud/discord' \
           --header 'Content-Type: application/json' \
           --header 'Authorization: Bearer ${{ secrets.DREAM_API_KEY }}' \
-          --data '{
-            "text": "'"$title"'",
-            "link": "'"$link"'"
-          }'
+          --data "$JSON_PAYLOAD"
 
