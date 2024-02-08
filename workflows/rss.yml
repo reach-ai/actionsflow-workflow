@@ -2,8 +2,13 @@ on:
   rss:
     url: 
       - https://hnrss.org/newest?points=300&count=3
-      - http://rss.cnn.com/rss/cnn_topstories.rss
-      - http://rss.cnn.com/rss/cnn_latest.rss
+      - https://www.apartmenttherapy.com/main.rss
+      - https://stylebyemilyhenderson.com/feed
+      - https://feeds.feedburner.com/younghouselove
+      - https://cococozy.com/feed/
+      - https://design-milk.com/feed/
+      - https://www.dezeen.com/feed/
+      - https://www.home-designing.com/feed
     config:
       limit: 10
       every: "*/5 * * * *" # every 5 mins
