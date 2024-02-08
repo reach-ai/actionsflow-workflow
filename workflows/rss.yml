@@ -1,8 +1,7 @@
 on:
   rss:
     url: 
-      - https://hnrss.org/newest?points=300&count=3
-      - https://www.apartmenttherapy.com/main.rss
+      # - https://www.apartmenttherapy.com/main.rss
       - https://stylebyemilyhenderson.com/feed
       - https://feeds.feedburner.com/younghouselove
       - https://cococozy.com/feed/
