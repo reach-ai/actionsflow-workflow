@@ -9,7 +9,7 @@ on:
       - https://www.dezeen.com/feed/
       - https://www.home-designing.com/feed
     config:
-      limit: 10
+      limit: 30
       every: "*/5 * * * *" # every 5 mins
       # debug: true
 jobs:
