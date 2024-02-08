@@ -1,7 +1,7 @@
 on:
   rss:
-    url: 
-      # - https://www.apartmenttherapy.com/main.rss
+    url:
+      - https://www.apartmenttherapy.com/main.rss
       - https://stylebyemilyhenderson.com/feed
       - https://feeds.feedburner.com/younghouselove
       - https://cococozy.com/feed/
