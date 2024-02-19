@@ -7,6 +7,12 @@ on:
       - https://feeds.bloomberg.com/markets/news.rss
       - https://feeds.a.dj.com/rss/RSSMarketsMain.xml
       - https://seekingalpha.com/listing/most-popular-articles.xml
+    parserConfig:
+      headers:
+        Accept:
+          - 'application/rss+xml'
+          - 'application/xml'
+          - 'text/xml; q=0.1'
     config:
       limit: 30
       every: "*/5 * * * *" # every 5 mins
