@@ -1,12 +1,12 @@
 on:
   rss:
     url:
-      - https://www.census.gov/economic-indicators/indicator.xml
-      - https://apps.bea.gov/rss/rss.xml
       - https://finance.yahoo.com/news/rssindex
       - https://feeds.bloomberg.com/markets/news.rss
       - https://feeds.a.dj.com/rss/RSSMarketsMain.xml
       - https://seekingalpha.com/listing/most-popular-articles.xml
+      - https://www.census.gov/economic-indicators/indicator.xml
+      - https://apps.bea.gov/rss/rss.xml
     parserConfig:
       headers:
         Accept:
