@@ -1,0 +1,42 @@
+on:
+  rss:
+    url:
+      # - https://www.apartmenttherapy.com/main.rss (has anti bot)
+      - https://www.dezeen.com/feed/
+      - https://cococozy.com/feed/
+      - https://design-milk.com/feed/
+      - https://stylebyemilyhenderson.com/feed
+      - https://feeds.feedburner.com/younghouselove
+      - https://www.home-designing.com/feed
+    # config:
+    #   limit: 30
+    #   every: "*/5 * * * *" # every 5 mins
+      # debug: true
+jobs:
+  print:
+    name: Print
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Outputs
+        env:
+          title: ${{on.rss.outputs.title}}
+          contentSnippet: ${{on.rss.outputs.contentSnippet}}
+          link: ${{on.rss.outputs.link}}
+        run: |
+          echo title: $title
+          echo contentSnippet: $contentSnippet
+          echo link: $link
+      - name: Install jq
+        run: sudo apt-get install jq
+      - name: Send POST Request
+        env:
+          title: ${{on.rss.outputs.title}}
+          contentSnippet: ${{on.rss.outputs.contentSnippet}}
+          link: ${{on.rss.outputs.link}}
+        run: |
+          JSON_PAYLOAD=$(jq -n --arg title "$title" --arg link "$link" '{"text": $title, "link": $link}')
+          curl --location 'https://dream-s47zheng.k8s.csclub.cloud/discord?channel_id=1148501160261591071' \
+          --header 'Content-Type: application/json' \
+          --header 'Authorization: Bearer ${{ secrets.DREAM_API_KEY }}' \
+          --data "$JSON_PAYLOAD"
+
