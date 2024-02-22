@@ -8,10 +8,6 @@ on:
       - https://stylebyemilyhenderson.com/feed
       - https://feeds.feedburner.com/younghouselove
       - https://www.home-designing.com/feed
-    config:
-      limit: 30
-      every: "*/5 * * * *" # every 5 mins
-      # debug: true
 jobs:
   print:
     name: Print

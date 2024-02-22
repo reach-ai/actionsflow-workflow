@@ -13,10 +13,6 @@ on:
           - 'application/rss+xml'
           - 'application/xml'
           - 'text/xml; q=0.1'
-    config:
-      limit: 30
-      every: "*/5 * * * *" # every 5 mins
-      # debug: true
 jobs:
   print:
     name: Print
