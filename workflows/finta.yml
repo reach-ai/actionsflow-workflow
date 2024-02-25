@@ -1,9 +1,9 @@
 on:
   rss:
     url:
-      - "https://techcrunch.com/category/startups/feed/"
-      - "https://www.accountingtoday.com/feed?rss=true"
-      - "https://www.entrepreneur.com/topic/accounting.rss"
+      - https://techcrunch.com/category/startups/feed/
+      - https://www.accountingtoday.com/feed?rss=true
+      - https://www.entrepreneur.com/topic/accounting.rss
 jobs:
   print:
     name: Print
@@ -31,4 +31,3 @@ jobs:
           --header 'Content-Type: application/json' \
           --header 'Authorization: Bearer ${{ secrets.DREAM_API_KEY }}' \
           --data "$JSON_PAYLOAD"
-
