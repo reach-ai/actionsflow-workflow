@@ -2,9 +2,6 @@ on:
   rss:
     url:
       - https://blog.xero.com/feed/
-      - https://bigideasforsmallbusiness.com/category/smb-taxes/feed/
-      - https://techcrunch.com/category/startups/feed/
-      - https://entrepreneurshandbook.co/feed
 jobs:
   print:
     name: Print
