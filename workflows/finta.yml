@@ -1,11 +1,10 @@
 on:
   rss:
     url:
-      - https://www.accountingtoday.com/feed?rss=true
       - https://blog.xero.com/feed/
       - https://bigideasforsmallbusiness.com/category/smb-taxes/feed/
-      - https://www.nfib.com/news/rss-feeds/?feeds=7
-      - https://www.entrepreneur.com/topic/accounting.rss
+      - https://techcrunch.com/category/startups/feed/
+      - https://entrepreneurshandbook.co/feed
 jobs:
   print:
     name: Print
