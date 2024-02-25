@@ -1,7 +1,8 @@
 on:
   rss:
     url:
-      - https://techcrunch.com/category/startups/feed/
+      # - https://techcrunch.com/category/startups/feed/
+      - "https://www.accountingtoday.com/feed?rss=true"
 jobs:
   print:
     name: Print
