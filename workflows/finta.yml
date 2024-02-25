@@ -1,9 +1,11 @@
 on:
   rss:
     url:
-      - https://www.home-designing.com/feed
-      - https://www.tasteofhome.com/feed/
-      - https://www.bonappetit.com/feed/rss
+      - https://www.accountingtoday.com/feed?rss=true
+      - https://blog.xero.com/feed/
+      - https://bigideasforsmallbusiness.com/category/smb-taxes/feed/
+      - https://www.nfib.com/news/rss-feeds/?feeds=7
+      - https://www.entrepreneur.com/topic/accounting.rss
 jobs:
   print:
     name: Print
