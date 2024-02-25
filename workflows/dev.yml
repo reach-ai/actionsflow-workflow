@@ -1,17 +1,7 @@
 on:
   rss:
     url:
-      # - https://www.apartmenttherapy.com/main.rss (has anti bot)
-      - https://www.dezeen.com/feed/
-      - https://cococozy.com/feed/
-      - https://design-milk.com/feed/
-      - https://stylebyemilyhenderson.com/feed
-      - https://feeds.feedburner.com/younghouselove
-      - https://www.home-designing.com/feed
-    # config:
-    #   limit: 30
-    #   every: "*/5 * * * *" # every 5 mins
-      # debug: true
+      - https://techcrunch.com/category/startups/feed/
 jobs:
   print:
     name: Print
