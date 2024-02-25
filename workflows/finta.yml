@@ -1,7 +1,7 @@
 on:
   rss:
     url:
-      - https://www.home-designing.com/feed
+      - https://blog.xero.com/feed/
 jobs:
   print:
     name: Print
