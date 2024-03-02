@@ -7,6 +7,7 @@ on:
       - https://www.greatplacetowork.com/resources/blog?format=feed
       - https://memebase.cheezburger.com/rss
       - https://randomthoughtbeam.wordpress.com/feed/
+      - https://www.theonion.com/rss
 jobs:
   print:
     name: Print
