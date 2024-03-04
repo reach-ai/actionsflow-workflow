@@ -6,6 +6,8 @@ on:
       - https://blog.rosettastone.com/feed/
       - https://www.greatplacetowork.com/resources/blog?format=feed
       # - https://www.theonion.com/rss
+    config:
+      every: "40 * * * *"
 jobs:
   print:
     name: Print

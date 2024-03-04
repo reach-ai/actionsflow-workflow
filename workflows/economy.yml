@@ -7,6 +7,8 @@ on:
       - https://seekingalpha.com/listing/most-popular-articles.xml
       - https://www.census.gov/economic-indicators/indicator.xml
       - https://apps.bea.gov/rss/rss.xml
+    config:
+      every: "20 * * * *"
     parserConfig:
       headers:
         Accept:
