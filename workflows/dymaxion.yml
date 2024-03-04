@@ -8,6 +8,7 @@ on:
       - https://stylebyemilyhenderson.com/feed
       - https://feeds.feedburner.com/younghouselove
       - https://www.home-designing.com/feed
+      - https://ikeahackers.net/feed
 jobs:
   print:
     name: Print
