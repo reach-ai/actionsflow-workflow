@@ -1,0 +1,29 @@
+on:
+  youtube:
+    channel_id:
+      - UC1dveoCg6eLJcy8q3l6u5Sg
+jobs:
+  print:
+    name: Print
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Outputs
+        env:
+          title: ${{on.youtube.outputs.title}}
+          link: ${{on.youtube.outputs.link}}
+        run: |
+          echo title: $title
+          echo link: $link
+      - name: Install jq
+        run: sudo apt-get install jq
+      - name: Send POST Request
+        env:
+          title: ${{on.youtube.outputs.title}}
+          link: ${{on.youtube.outputs.link}}
+        run: |
+          JSON_PAYLOAD=$(jq -n --arg title "$title" --arg link "$link" '{"text": $title, "link": $link}')
+          curl --location 'https://dream-iqcavl7vwq-uc.a.run.app/discord?channel_id=1203231544962056202' \
+          --header 'Content-Type: application/json' \
+          --header 'Authorization: Bearer ${{ secrets.DREAM_API_KEY }}' \
+          --data "$JSON_PAYLOAD"
+
