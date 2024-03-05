@@ -1,7 +1,7 @@
 on:
   rss:
     url:
-      # - https://www.apartmenttherapy.com/main.rss (has anti bot)
+      - https://www.apartmenttherapy.com/main.rss
       - https://www.dezeen.com/feed/
       - https://cococozy.com/feed/
       - https://design-milk.com/feed/
