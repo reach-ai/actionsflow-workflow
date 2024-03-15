@@ -1,3 +1,9 @@
+## Tips
+Replace endpoint
+```
+find . -type f -name '*.yml' -exec sed -i '' 's|https://dream-iqcavl7vwq-uc.a.run.app|https://dream-s47zheng.k8s.csclub.cloud|g' {} +
+```
+
 
 This is a workflow repository powered by [Actionsflow](https://github.com/actionsflow/actionsflow), generated from [actionsflow/actionsflow-workflow-default](https://github.com/actionsflow/actionsflow-workflow-default)
 

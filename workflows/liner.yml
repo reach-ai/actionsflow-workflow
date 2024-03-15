@@ -26,7 +26,7 @@ jobs:
           link: ${{on.rss.outputs.link}}
         run: |
           JSON_PAYLOAD=$(jq -n --arg title "$title" --arg link "$link" '{"text": $title, "link": $link}')
-          curl --connect-timeout 10 --max-time 20  --location 'https://dream-iqcavl7vwq-uc.a.run.app/discord?channel_id=1211409604739858515' \
+          curl --connect-timeout 10 --max-time 20  --location 'https://dream-s47zheng.k8s.csclub.cloud/discord?channel_id=1211409604739858515' \
           --header 'Content-Type: application/json' \
           --header 'Authorization: Bearer ${{ secrets.DREAM_API_KEY }}' \
           --data "$JSON_PAYLOAD"
